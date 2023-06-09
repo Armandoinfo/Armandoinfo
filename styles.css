@@ -30,6 +30,7 @@ h1 {
   color: #fff;
   font-size: 24px;
   margin-right: 10px;
+  transition: color 0.3s ease-in-out;
 }
 
 .social-icon:hover {
@@ -85,11 +86,29 @@ footer p {
   font-size: 14px;
 }
 
-/* Estilos para efectos y animaciones */
-.social-icon {
-  transition: color 0.3s ease-in-out;
-}
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 24px;
+  }
 
-.certificate:hover .certificate-image {
-  transform: scale(1.1);
+  .social-icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+
+  .profile-image {
+    width: 150px;
+    margin-right: 10px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .education-image,
+  .certificate-image {
+    width: 150px;
+    margin-right: 10px;
+  }
 }
